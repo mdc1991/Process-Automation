@@ -6,7 +6,7 @@ from openpyxl import load_workbook
 from openpyxl.utils.cell import column_index_from_string
 from win32com.client import Dispatch
 
-template = r'C:\Users\markc\OneDrive\Documents\Python\Work Python\Link Change\Link Change Template.xlsx'
+template = r'..\..\Link Change Template.xlsx' #Change the directory to where the Link Change Template is saved
 
 def get_named_ranges(file):
     wb = load_workbook(file, read_only=True)
